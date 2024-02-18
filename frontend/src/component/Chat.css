@@ -1,0 +1,14 @@
+.App {
+    position: relative;
+  }
+  
+  .ChatContainer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 800px;
+    width: 700px;
+  }
+  .icon:hover{
+    background-color: aqua !important;
+  }

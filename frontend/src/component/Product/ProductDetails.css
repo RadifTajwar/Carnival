@@ -1,0 +1,291 @@
+.ProductDetails {
+    background-color: #e0dcdc;
+    width: 100vw;
+    max-width: 100%;
+    padding: 1vmax;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.ProductDetails > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2vmax;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.CarouselImage {
+    width: 20vmax;
+}
+
+.ProductDetails > div:last-child {
+    align-items: center;
+}
+
+.detailsblock1 {
+    align-items: center;
+}
+
+.detailsblock1 > h2 {
+    color: rgb(54, 54, 54);
+    font: 600 1.7vmax 'Roboto';
+    align-items: center;
+}
+
+.detailsblock1 > p {
+    color: rgb(54, 54, 54, 0.582);
+    font: 200 0.8vmax cursive;
+}
+
+.detailsblock2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 2px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.205);
+    width: 70%;
+    padding: .5vmax;
+}
+
+.detailsblock22 > span {
+    /*color: rgb(54, 54, 54, 0.582);*/
+    /*font: 200 1vmax cursive;*/
+    padding: .5vmax;
+}
+
+.detailsblock22span {
+    /*color: rgb(54, 54, 54, 0.582);*/
+    font: 200 1vmax cursive;
+    /*padding: .5vmax;*/
+    vertical-align: 7px;
+}
+
+.detailsblock3 > h1 {
+    /*color: rgba(17, 17, 17, .795);*/
+    color: green;
+    font: 400 1.8vmax 'Franklin Gothic Medium';
+    margin: 1vmax 0;
+}
+
+.detailsblock31 {
+    display: -webkit-inline-flex;
+    padding: 0.5vmax;
+}
+
+.detailsblock311 > button {
+    border: none;
+    background-color: rgba(0, 0, 0, .5);
+    padding: .5vmax;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+
+.detailsblock311 > button:hover {
+    background-color: rgba(0, 0, 0, .967);
+}
+
+.detailsblock311 > input {
+    border: none;
+    padding: 0.5vmax;
+    width: 3vmax;
+    text-align: center;
+    outline: none;
+    font: 400 1.2vmax 'Roboto';
+    color: rgba(0, 0, 0, 0.967);
+}
+
+.greenColor {
+    color: green;
+}
+
+.redColor {
+    color: red;
+}
+
+.detailsblock31 > button:last-child {
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    background-color: green;
+    font: 700 1.25vmax 'Roboto';
+    border-radius: 20px;
+    padding: 0.5vmax 2vmax;
+    margin: 0vmax 1vmax;
+    outline: none;
+}
+
+.detailsblock31 > button:last-child:hover {
+    background-color: #0b4d28;
+}
+
+.detailsblock31 > p {
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 1.5vmax 1.5vmax;
+    color: rgba(0, 0, 0, 0.651);
+    font: 700 1.5vmax 'Roboto';
+    margin: 1vmax 0;
+}
+
+.detailsblock4 {
+    padding: .5vmax;
+    color: rgba(0, 0, 0, 0.897);
+    font: 500 1.2vmax sans-serif;
+}
+
+.detailsblock4 > p {
+    color: rgba(0, 0, 0, 0.85);
+    font: 1vmax sans-serif;
+    padding: .25vmax;
+}
+
+.submitReview {
+    border: none;
+    background-color: #000738;
+    font: 500 1.2vmax 'Roboto';
+    border-radius: 20px;
+    padding: 1vmax 2vmax;
+    margin: 1vmax 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+}
+
+.submitReview:hover {
+    background-color: #3027ae;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 768px) {
+    .ProductDetails {
+        flex-direction: column;
+        height: unset;
+    }
+
+    .ProductDetails > div:last-child {
+        align-items: center;
+    }
+
+    .detailsblock1 > h2 {
+        font-size: 2.8vmax;
+        text-align: center;
+    }
+
+    .detailsblock1 > p {
+        text-align: center;
+        font-size: 1vmax;
+    }
+
+    .detailsblock2 {
+        justify-content: center;
+    }
+
+    .detailsblock2 > span {
+        font-size: 1.5vmax;
+    }
+
+    .detailsblock3 > h1 {
+        font: 700 3vmax 'Franklin Gothic Medium';
+        text-align: center;
+    }
+
+    .detailsblock31 {
+        flex-direction: column;
+    }
+
+    .detailsblock311 {
+        padding: 2vmax 0;
+    }
+
+    .detailsblock311 > button {
+        padding: 1.2vmax;
+        width: 4vmax;
+    }
+
+    .detailsblock311 > input {
+        padding: 1.5vmax;
+        width: 3vmax;
+        font: 400 1.8vmax 'Roboto';
+    }
+
+    .detailsblock31 > button:last-child {
+        font: 500 1.7vmax 'Roboto';
+        padding: 1.5vmax;
+        width: 20vmax;
+        margin: 3vmax 0;
+    }
+
+    .detailsblock3 > p {
+        padding: 2.5vmax 0;
+        text-align: center;
+        font: 400 2vmax 'Roboto';
+    }
+
+    .detailsblock4 {
+        font: 500 2.5vmax sans-serif;
+    }
+
+    .detailsblock4 > p {
+        font: 300 1.8vmax sans-serif;
+    }
+
+    .submitReview {
+        font: 500 1.7vmax 'Roboto';
+        padding: 1.5vmax;
+        width: 20vmax;
+        margin: 3vmax 0;
+    }
+
+    .reviewCard > p {
+        font: 600 3vw "Roboto";
+    }
+
+    .reviewCardComment {
+        font: 300 5vw cursive;
+    }
+
+}
+
+
+.submitDialog {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitDialogTextArea {
+    border: 1px solid rgba(0, 0, 0, 0.777);
+    margin: 1vmax 0;
+    outline: none;
+    padding: 1rem;
+    font: 300 1rem "Roboto";
+}
+
+
+.reviewsHeading {
+    color: black;
+    font: 500 1.4vmax 'Roboto';
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 1vmax;
+    width: 20vmax;
+    margin: auto auto 4vmax;
+}
+
+.reviews {
+    display: flex;
+    overflow: auto;
+}
+
+.noReviews {
+    font: 400 1.3vmax 'Gill Sans';
+    text-align: center;
+    color: rgba(0, 0, 0, 0.548);
+}
+
